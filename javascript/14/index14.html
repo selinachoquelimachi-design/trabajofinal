@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Cuerpos Celestes</title>
+    <link rel="stylesheet" href="style14.css">
+</head>
+<body>
+<div class="container">
+    <h1>Clasificación de Cuerpos Celestes</h1>
+
+    <div id="inputSection">
+        <label>Ingresa un código (1-5):</label>
+        <input type="number" id="celestialCode" min="1" max="5" placeholder="1-5">
+        <button id="checkBtn">Identificar</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+
+    <h2>Diagrama de tipos seleccionados:</h2>
+    <div class="diagram">
+        <div class="bar estrella" id="barEstrella">⭐ Estrella: 0</div>
+        <div class="bar planeta" id="barPlaneta">🪐 Planeta: 0</div>
+        <div class="bar cometa" id="barCometa">☄️ Cometa: 0</div>
+        <div class="bar asteroide" id="barAsteroide">🪨 Asteroide: 0</div>
+        <div class="bar galaxia" id="barGalaxia">🌌 Galaxia: 0</div>
+    </div>
+
+    <button id="resetBtn">Reiniciar</button>
+</div>
+
+<script src="main14.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #d9e6f6, #ffffff);
+    color: #333;
+
+    /* ⬇️ Centrar el contenido como una tarjeta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📌 Tarjeta contenedora */
+.card {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    width: 350px;
+    text-align: center;
+}
+
+/* ------ Estilos originales ajustados ------ */
+
+h1 {
+    color: #e010ac;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#listaTemperaturas,
+#focosCalor {
+    font-weight: bold;
+}
+
+#focosCalor {
+    color: red;
+}
+
+/* 🌡 Contenedor de temperaturas estilo tarjetas pequeñas */
+#visualizacionTemperaturas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.temperatura-item {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    min-width: 60px;
+    text-align: center;
+}
+
+/* 🎨 Colores según temperatura */
+.frio {
+    background-color: #29abe2; /* Azul claro */
+}
+
+.normal {
+    background-color: #60bd6b; /* Verde */
+}
+
+.caliente {
+    background-color: #ef5350; /* Rojo */
+}

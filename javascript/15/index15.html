@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Luz (Lux)</title>
+    <link rel="stylesheet" href="style15.css">
+</head>
+<body>
+<div class="container">
+    <h1>Registro de Luz (lux)</h1>
+
+    <input type="text" id="luxInput" placeholder="Ingresa valor en lux o 'no'">
+    <button id="addBtn">Agregar</button>
+
+    <div id="records" class="records"></div>
+
+    <div id="results" class="hidden">
+        <p>Total registros: <span id="totalCount">0</span></p>
+        <p>Promedio: <span id="avgLux">0</span> lux</p>
+
+        <h3>Mini-juego: Adivina el promedio</h3>
+        <input type="number" id="guessInput" placeholder="Ingresa tu número">
+        <button id="guessBtn">Adivinar</button>
+        <p id="guessResult"></p>
+    </div>
+
+    <button id="resetBtn">Reiniciar</button>
+</div>
+
+<script src="main15.js"></script>
+</body>
+</html>
+
+

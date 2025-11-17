@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Río</title>
+    <link rel="stylesheet" href="style5.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoreo de Niveles del Río 🌊</h1>
+
+        <div class="card">
+            <p>El registro se detendrá si el nivel supera los 3 metros o cuando presiones "Finalizar Monitoreo".</p>
+            
+            <label for="nivel-rio">Nivel actual (metros):</label>
+            <input id="nivel-rio" type="number" step="0.01" min="0" placeholder="Ej: 2.50">
+
+            <div class="button-group">
+                <button id="btn-registrar" onclick="registrarNivel()">Registrar Nivel</button>
+                <button id="btn-finalizar" onclick="finalizarMonitoreo()">Finalizar Monitoreo</button>
+            </div>
+
+            <h3>Registros Históricos:</h3>
+            
+            <div id="registros" class="registros-lista">
+                Presiona "Registrar Nivel" para comenzar.
+            </div>
+            
+            <h3>Estado de Alerta:</h3>
+            <p id="alerta" class="estado-alerta normal">Nivel normal.</p>
+        </div>
+    </div>
+    
+    <script src="main5.js"></script>
+</body>
+</html>

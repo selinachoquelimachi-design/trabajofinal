@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100vh;
+    background: color(srgb red green rgb(104, 4, 129)) center fixed;
+    background-size: cover;
+}
+
+/* Tarjeta principal */
+.container {
+    width: 420px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00c3ff;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #00eaff;
+}
+
+/* Clasificación */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0099cc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+button:hover {
+    background: #007a9e;
+}
+
+.resultado {
+    text-align: center;
+    background: rgba(0, 100, 170, 0.5);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Juego */
+.valorJuego {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.op {
+    background: #4400aa;
+}
+
+.op:hover {
+    background: #6600cc;
+}
+
+.mensajeJuego {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuevo {
+    margin-top: 20px;
+    background: #00cc44;
+}
+
+.nuevo:hover {
+    background: #009933;
+}
