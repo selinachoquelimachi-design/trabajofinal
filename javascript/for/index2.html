@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ruido Ambiental</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Registro de Ruido Ambiental</h1>
+        <p>Ingresa el número de mediciones y luego los niveles de ruido (dB).</p>
+
+        <label for="numMediciones">Número de Mediciones:</label>
+        <input id="numMediciones" type="number" min="1" placeholder="Ej: 5">
+        <button id="iniciarRegistroBtn">Iniciar Registro</button>
+
+        <div id="registroInputs" style="display:none;">
+            <h2>Ingresar Mediciones:</h2>
+            <div id="medicionesContainer"></div>
+            <button id="calcularPromedioBtn">Calcular Promedio</button>
+        </div>
+
+        <h2>Mediciones:</h2>
+        <p id="listaDB">Sin registros.</p>
+
+        <h2>Promedio:</h2>
+        <p id="promedioDB">Aún no hay datos suficientes.</p>
+    </div>
+
+    <script src="main2.js"></script>
+</body>

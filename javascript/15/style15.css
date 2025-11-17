@@ -1,0 +1,10 @@
+body { font-family: Arial; background:#1a1a2e; color:white; text-align:center; padding:20px;}
+input, button { padding:10px; margin:5px; border-radius:5px; border:none;}
+button { background:#ff4d6d; color:white; cursor:pointer;}
+button:hover { background:#ff1a3c;}
+.records { margin-top:15px; display:flex; flex-wrap:wrap; gap:5px; justify-content:center;}
+.record { padding:8px 12px; border-radius:5px; font-weight:bold;}
+.night { background:#0b3d91;}
+.evening { background:#845ec2;}
+.day { background:#ffc75f;}
+.hidden { display:none; }

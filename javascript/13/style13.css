@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 40px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffd633;
+}
+
+.hidden { display: none; }
+
+.result, .diagram {
+    margin-top: 20px;
+}
+
+.diagram {
+    width: 100%;
+    height: 30px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background: #f39c12;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.5s;
+}
+
+.gameBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+

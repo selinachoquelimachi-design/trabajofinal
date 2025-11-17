@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Residuos</title>
+    <link rel="stylesheet" href="style4.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificación de Residuos 🗑️</h1>
+
+        <div class="card">
+            <p>Códigos de Clasificación:</p>
+            <ul>
+                <li>1 - Orgánico 🍃</li>
+                <li>2 - Plástico ♻️</li>
+                <li>3 - Papel / Cartón 📦</li>
+                <li>4 - Vidrio 🍾</li>
+            </ul>
+
+            <label for="codigo">Ingresa el código del residuo:</label>
+            <input id="codigo" type="number" min="1" max="4" placeholder="Ej: 1">
+            <button onclick="clasificarResiduo()">Clasificar Residuo</button>
+
+            <h3>Tipo de Residuo:</h3>
+            <p id="tipo" class="resultado-texto">Ingresa un código.</p>
+        </div>
+        </div>
+
+    <script src="main4.js"></script>
+</body>
+</html>
